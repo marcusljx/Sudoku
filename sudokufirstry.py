@@ -2,14 +2,14 @@
 import random
 # creating all the availnums in each row and column and box
 allcubes =[]
-onetonine=[1,2,3,4,5,6,7,8,9]
+onetonine= lambda : [1,2,3,4,5,6,7,8,9]
 availnuminx=[]
 availnuminy=[]
 availnuminbox=[]
 for repeat in range(9):
-    availnuminx.append(onetonine)
-    availnuminy.append(onetonine)
-    availnuminbox.append(onetonine)
+    availnuminx.append(onetonine())
+    availnuminy.append(onetonine())
+    availnuminbox.append(onetonine())
 
 #initializing x,y and box coords for all cubes
 for xcoord in range(9):
